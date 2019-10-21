@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace写接口包名.类名 -->
+<mapper namespace="com.com.com.xxx.dao.UserMapper">
+    <!--查询使用select标签
+    id:填对应方法名
+    resultType:返回值类型,List<User>,集合只用返回存储的类全名-->
+    <select id="findAllUsers" resultType="com.com.com.xxx.entity.UserInfo">
+        select * from username;
+    </select>
+</mapper>
