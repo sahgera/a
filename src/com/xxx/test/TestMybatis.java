@@ -25,6 +25,7 @@ public class TestMybatis {
     System.out.println("userMapper = " + userMapper);
     // 5.使用实现类对象执行数据库操作
     List<User> allUsers = userMapper.findAllUsers();
+    System.out.println("allUsers = " + allUsers);
     for (User user : allUsers) {
         System.out.println("user = " + user);
     }
